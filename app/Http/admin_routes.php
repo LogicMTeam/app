@@ -78,21 +78,36 @@ Route::group(['as' => $as, 'middleware' => ['auth', 'permission:ADMIN_PANEL']], 
 	Route::resource(config('laraadmin.adminRoute') . '/overviews', 'LA\OverviewsController');
 	Route::get(config('laraadmin.adminRoute') . '/overview_dt_ajax', 'LA\OverviewsController@dtajax');
 
+	/* ================== Names ================== */
+	Route::resource(config('laraadmin.adminRoute') . '/names', 'LA\NamesController');
+	Route::get(config('laraadmin.adminRoute') . '/name_dt_ajax', 'LA\NamesController@dtajax');
 
 
 
 
+	/* ================== Ens ================== */
+	Route::resource(config('laraadmin.adminRoute') . '/ens', 'LA\EnsController');
+	Route::get(config('laraadmin.adminRoute') . '/en_dt_ajax', 'LA\EnsController@dtajax');
+
+	/* ================== Tên_Tiếng_Anhs ================== */
+	Route::resource(config('laraadmin.adminRoute') . '/tên_tiếng_anhs', 'LA\Tên_Tiếng_AnhsController');
+	Route::get(config('laraadmin.adminRoute') . '/tên_tiếng_anh_dt_ajax', 'LA\Tên_Tiếng_AnhsController@dtajax');
 
 
 
+	/* ================== Gui_bao_caos ================== */
+	Route::resource(config('laraadmin.adminRoute') . '/gui_bao_caos', 'LA\Gui_bao_caosController');
+	Route::get(config('laraadmin.adminRoute') . '/gui_bao_cao_dt_ajax', 'LA\Gui_bao_caosController@dtajax');
 
+	/* ================== Gui_bao_caos ================== */
+	Route::resource(config('laraadmin.adminRoute') . '/gui_bao_caos', 'LA\Gui_bao_caosController');
+	Route::get(config('laraadmin.adminRoute') . '/gui_bao_cao_dt_ajax', 'LA\Gui_bao_caosController@dtajax');
 
+	/* ================== Gui_bao_caos ================== */
+	Route::resource(config('laraadmin.adminRoute') . '/gui_bao_caos', 'LA\Gui_bao_caosController');
+	Route::get(config('laraadmin.adminRoute') . '/gui_bao_cao_dt_ajax', 'LA\Gui_bao_caosController@dtajax');
 
-	/* ================== Sssses ================== */
-	Route::resource(config('laraadmin.adminRoute') . '/sssses', 'LA\SsssesController');
-	Route::get(config('laraadmin.adminRoute') . '/ssss_dt_ajax', 'LA\SsssesController@dtajax');
-
-	/* ================== As ================== */
-	Route::resource(config('laraadmin.adminRoute') . '/as', 'LA\AsController');
-	Route::get(config('laraadmin.adminRoute') . '/a_dt_ajax', 'LA\AsController@dtajax');
+	/* ================== Gui_bao_caos ================== */
+	Route::resource(config('laraadmin.adminRoute') . '/gui_bao_caos', 'LA\Gui_bao_caosController');
+	Route::get(config('laraadmin.adminRoute') . '/gui_bao_cao_dt_ajax', 'LA\Gui_bao_caosController@dtajax');
 });

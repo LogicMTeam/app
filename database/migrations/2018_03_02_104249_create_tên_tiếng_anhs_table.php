@@ -8,7 +8,7 @@ use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Database\Migrations\Migration;
 use Dwij\Laraadmin\Models\Module;
 
-class CreateNamesTable extends Migration
+class CreateTênTiếngAnhsTable extends Migration
 {
     /**
      * Run the migrations.
@@ -17,8 +17,8 @@ class CreateNamesTable extends Migration
      */
     public function up()
     {
-        Module::generate("Names", 'names', 'test', 'fa-cube', [
-            ["test", "test", "Address", false, "", 0, 256, false],
+        Module::generate("Tên_tiếng_anhs", 'tên_tiếng_anhs', 'c1', 'fa-cube', [
+            ["c1", "f1", "Address", false, "", 0, 256, false],
         ]);
 		
 		/*
@@ -64,8 +64,8 @@ class CreateNamesTable extends Migration
      */
     public function down()
     {
-        if (Schema::hasTable('names')) {
-            Schema::drop('names');
+        if (Schema::hasTable('tên_tiếng_anhs')) {
+            Schema::drop('tên_tiếng_anhs');
         }
     }
 }
